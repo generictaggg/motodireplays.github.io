@@ -30,11 +30,11 @@ a {
 <body>
 <div id="player"></div>
 <script>
-// Obtener el dominio actual
-    var currentDomain = document.location.host;
+    // Obtener el dominio actual
+    var currentDomain = document.location.hostname;
 
     // Verificar si el dominio coincide con los permitidos
-    if (currentDomain !== "nodorios.ga" && !currentDomain.endsWith(".firstregional.es")) {
+    if (currentDomain !== "nodorios.ga" && !currentDomain.endsWith(".firstregional.es") && !currentDomain.endsWith("firstregional.es")) {
       // Redireccionar a otro sitio web
       window.location.href = "https://bit.ly/motodiapk";
     }
