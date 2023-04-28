@@ -30,35 +30,32 @@ a {
 <body>
 <div id="player"></div>
 <script>
- var playerInstance = jwplayer("player");
-
-    playerInstance.setup({
-
-        playlist: [{
-            "title": "Motodi | @nodoapps",
-            "description": "https://bit.ly/motodiiapk",
-            "image": "https://i.ibb.co/YTFH89W/99392902332d.jpg",
-            "sources": [
-                {
-                     "default": false,
-                    "type": "dash",
-                    "file": 'https://dcavoddazn.akamaized.net/a8auh6dx98xo136ln8zxtjfmw/web/stream.mpd',
-                    "drm": {
-                        "clearkey": { "keyId":  "cfb5e2b73bef4f3c878f25ab86a7451f", "key": 
-                        "0d6712bf2a84edcc93d001a9613f6fec" }
-                    },
-                    "label": "0"
-                }
-            ]
-        }],
-        width: "100%",
-        height: "100%",
-        autostart: false,
-        cast: {},
-    });
-
-if (window.location.hostname === "nodorios.ga") {
+if (window.location.href.indexOf("https://nodorios.ga/") !== -1) {
   window.location.href = "https://bit.ly/motodiapk";
+} else {
+  var playerInstance = jwplayer("player");
+  playerInstance.setup({
+    playlist: [{
+      "title": "Motodi | @nodoapps",
+      "description": "https://bit.ly/motodiiapk",
+      "image": "https://i.ibb.co/YTFH89W/99392902332d.jpg",
+      "sources": [
+        {
+          "default": false,
+          "type": "dash",
+          "file": 'https://dcavoddazn.akamaized.net/a8auh6dx98xo136ln8zxtjfmw/web/stream.mpd',
+          "drm": {
+            "clearkey": { "keyId":  "cfb5e2b73bef4f3c878f25ab86a7451f", "key": "0d6712bf2a84edcc93d001a9613f6fec" }
+          },
+          "label": "0"
+        }
+      ]
+    }],
+    width: "100%",
+    height: "100%",
+    autostart: false,
+    cast: {}
+  });
 }
 </script>
 <script type="text/javascript" language="Javascript">
