@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Disponible en unos minutos</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		.center {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 50vh;
+			font-size: 2em;
+			font-weight: bold;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="center">
+		<p id="mensaje">Disponible en unos minutos</p>
+	</div>
+	<script>
+		setInterval(function() {
+			var mensaje = document.getElementById("mensaje");
+			if (mensaje.innerHTML === "Disponible en unos minutos") {
+				mensaje.innerHTML = "En proceso de actualización";
+			} else {
+				mensaje.innerHTML = "Disponible en unos minutos";
+			}
+		}, 10000);
+	</script>
+</body>
+</html>
