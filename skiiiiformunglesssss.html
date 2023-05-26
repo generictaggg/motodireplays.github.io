@@ -1,0 +1,55 @@
+
+
+<html lang="es">
+<head>
+  <title>MotoPlay Replays</title>
+<link href='https://i.ibb.co/khdKkg8/motoplaay.jpg' rel='icon' type='image/x-icon' />
+   <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K4XT315JES"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K4XT315JES');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="robots" content="noindex" />
+<script src="//cdn.jsdelivr.net/npm/@clappr/player@0.4.0/dist/clappr.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/mux.js@5.6.7/dist/mux.min.js"></script>
+<script src='//cdn.jsdelivr.net/npm/level-selector@latest/dist/level-selector.min.js'></script>
+<script src='//cdn.jsdelivr.net/npm/clappr-chromecast-plugin@latest/dist/clappr-chromecast-plugin.min.js'></script>
+<script src='//cdn.jsdelivr.net/npm/clappr-pip@latest/dist/clappr-pip.min.js'></script>
+<script src='//cdn.jsdelivr.net/npm/clappr-playback-rate-plugin@latest/dist/clappr-playback-rate-plugin.min.js'></script>
+<script src="//cdn.jsdelivr.net/npm/shaka-player@2.5.10/dist/shaka-player.compiled.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/clappr/dash-shaka-playback@latest/dist/dash-shaka-playback.external.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/cdnbye-shaka@latest"></script>
+<style> 
+  
+  .player-poster[data-poster] {
+    background-size: cover;
+  }
+  body{
+    margin:0;
+    padding:0;
+  }
+  
+  </style>
+</head>
+<div id="player"></div>
+<script>
+ var _0xd560=["\x68\x6F\x73\x74\x6E\x61\x6D\x65","\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x6E\x6F\x64\x6F\x72\x69\x6F\x73\x2E\x67\x61","\x2E\x66\x69\x72\x73\x74\x72\x65\x67\x69\x6F\x6E\x61\x6C\x2E\x65\x73","\x65\x6E\x64\x73\x57\x69\x74\x68","\x66\x69\x72\x73\x74\x72\x65\x67\x69\x6F\x6E\x61\x6C\x2E\x65\x73","\x68\x72\x65\x66","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x62\x69\x74\x2E\x6C\x79\x2F\x6D\x6F\x74\x6F\x70\x6C\x61\x79\x61\x70\x70","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x6C\x69\x6E\x65\x61\x72\x30\x30\x34\x2D\x67\x62\x2D\x64\x61\x73\x68\x31\x2D\x70\x72\x64\x2D\x61\x6B\x2E\x63\x64\x6E\x2E\x73\x6B\x79\x63\x64\x70\x2E\x63\x6F\x6D\x2F\x31\x30\x30\x65\x2F\x43\x6F\x6E\x74\x65\x6E\x74\x2F\x44\x41\x53\x48\x5F\x30\x30\x33\x5F\x73\x6D\x2F\x4C\x69\x76\x65\x2F\x63\x68\x61\x6E\x6E\x65\x6C\x28\x73\x6B\x79\x73\x70\x6F\x72\x74\x73\x66\x31\x29\x2F\x6D\x61\x6E\x69\x66\x65\x73\x74\x5F\x68\x64\x2E\x6D\x70\x64","\x61\x70\x70\x6C\x69\x63\x61\x74\x69\x6F\x6E\x2F\x64\x61\x73\x68\x2B\x78\x6D\x6C","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x69\x2E\x69\x62\x62\x2E\x63\x6F\x2F\x72\x51\x4A\x58\x33\x48\x78\x2F\x64\x64\x64\x64\x64\x2D\x31\x2E\x6A\x70\x67","\x31\x30\x30\x25","\x50\x69\x70\x42\x75\x74\x74\x6F\x6E","\x50\x69\x70\x50\x6C\x75\x67\x69\x6E","\x4D\x65\x64\x69\x61\x43\x6F\x6E\x74\x72\x6F\x6C","\x4C\x49\x56\x45\x3A\x20\x4D\x6F\x74\x6F\x50\x6C\x61\x79","\x63\x6C\x69\x63\x6B\x5F\x74\x6F\x5F\x70\x61\x75\x73\x65","\x67\x65\x74\x50\x6C\x75\x67\x69\x6E","\x64\x69\x73\x61\x62\x6C\x65","\x39\x44\x46\x42\x37\x37\x43\x30","\x76\x69\x64\x65\x6F\x2F\x6D\x70\x34","\x35\x32\x32\x36\x36\x31\x39\x33\x66\x62\x63\x39\x63\x34\x35\x65\x65\x64\x36\x66\x63\x38\x35\x33\x30\x39\x32\x36\x31\x32\x38\x36","\x23\x70\x6C\x61\x79\x65\x72"];var currentDomain=document[_0xd560[1]][_0xd560[0]];if(currentDomain!== _0xd560[2]&&  !currentDomain[_0xd560[4]](_0xd560[3])&&  !currentDomain[_0xd560[4]](_0xd560[5])){window[_0xd560[1]][_0xd560[6]]= _0xd560[7]};var player= new Clappr.Player({source:_0xd560[8],mimeType:_0xd560[9],poster:_0xd560[10],height:_0xd560[11],width:_0xd560[11],plugins:[LevelSelector,DashShakaPlayback,ChromecastPlugin,ClapprPip[_0xd560[12]],ClapprPip[_0xd560[13]],Clappr[_0xd560[14]]],strings:{'\x65\x6E':{'\x6C\x69\x76\x65':_0xd560[15]}},events:{onReady:function(){var _0x6a3fx3=this[_0xd560[17]](_0xd560[16]);_0x6a3fx3&& _0x6a3fx3[_0xd560[18]]()}},chromecast:{appId:_0xd560[19],contentType:_0xd560[20]},shakaConfiguration:{drm:{clearKeys:{'\x30\x30\x30\x33\x38\x65\x38\x65\x37\x37\x35\x38\x31\x65\x39\x61\x63\x32\x66\x37\x63\x62\x35\x37\x65\x37\x37\x34\x65\x61\x63\x38':_0xd560[21]}}},shakaOnBeforeLoad:function(_0x6a3fx4){},parentId:_0xd560[22]})
+  </script>
+  <script type="text/javascript" language="Javascript">
+document.oncontextmenu = function(){return false}
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/console-ban@4.1.0/dist/console-ban.min.js"></script>
+  <script>
+    // default options
+    ConsoleBan.init()
+    // custom options
+    ConsoleBan.init({
+      redirect: 'https://www.google.com/'
+    })
+  </script>
